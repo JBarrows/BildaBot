@@ -334,7 +334,7 @@ namespace MoreMountains.CorgiEngine
 		protected float _movingPlatformCurrentGravity;
 		protected bool _gravityActive=true;
 		protected Collider2D _ignoredCollider = null;
-		protected bool _collisionsOnWithStairs = false;
+		public bool _collisionsOnWithStairs = false;
 
 		protected const float _smallValue=0.0001f;
 		protected const float _movingPlatformsGravity=-500;

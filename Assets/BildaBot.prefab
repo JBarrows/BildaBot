@@ -588,7 +588,7 @@ MonoBehaviour:
     UseSeparateDecelerationInAir: 0
     SpeedDecelerationInAir: 5
     SpeedFactor: 1
-    MaximumSlopeAngle: 30
+    MaximumSlopeAngle: 46
     SlopeAngleSpeedFactor:
       serializedVersion: 2
       m_Curve:
@@ -672,6 +672,7 @@ MonoBehaviour:
   SafetyBoxcastSizeRatio: {x: 0.8, y: 0.8}
   ExtractionIncrement: 0.05
   MaxExtractionsIterations: 10
+  _collisionsOnWithStairs: 0
 --- !u!114 &4912924749165116932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,15 +1048,15 @@ MonoBehaviour:
   StairsBelow: 0
   StairsAhead: 0
   ClimbingUpPrevented: 0
-  StairsAheadDetectionRaycastOrigin: {x: -0.75, y: 0, z: 0}
-  StairsAheadDetectionRaycastLength: 2
+  StairsAheadDetectionRaycastOrigin: {x: -0.75, y: 0.1, z: 0}
+  StairsAheadDetectionRaycastLength: 2.5
   StairsBelowDetectionRaycastOrigin: {x: -0.2, y: 0, z: 0}
   StairsBelowDetectionRaycastLength: 2
   StairsBelowLockTime: 0.2
   MinimumSpeedToBoardStairs: 0.1
-  PreventClimbingPastStairs: 0
-  PreventClimbingRaycastOffset: {x: 0.22, y: 0.2, z: 0}
-  PreventClimbingRaycastLength: 0.5
+  PreventClimbingPastStairs: 1
+  PreventClimbingRaycastOffset: {x: -0.62, y: 1.72, z: 0}
+  PreventClimbingRaycastLength: 1.75
 --- !u!1 &4772602370105576279
 GameObject:
   m_ObjectHideFlags: 0

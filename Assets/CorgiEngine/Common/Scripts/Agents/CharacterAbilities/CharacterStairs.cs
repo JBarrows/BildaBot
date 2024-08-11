@@ -194,7 +194,23 @@ namespace MoreMountains.CorgiEngine
 					{
 						authorize = false;
 					}
-				}
+
+					if (authorize) {
+						Debug.Log("Authorizing");
+                    } else {
+						Debug.Log("Nothorizing");
+					}
+				} else if (!_controller._collisionsOnWithStairs) {
+					// Stairs not in front, collision still disabled
+					Debug.LogWarning("Collision imminent!");
+					var bounds = _controller.GetComponent<BoxCollider2D>().bounds;
+					bool intersectingWithStairs = Physics2D.OverlapBox(bounds.center, bounds.size, 0f, _controller.StairsMask);
+					if (intersectingWithStairs) {
+						//intersecting with stairs, don't enable collision yet!
+						Debug.Log("INTERSECTION !!");
+						authorize = false;
+                    }
+                }
 
 				if (StairsBelow 
 				    && !OnStairs 
@@ -215,15 +231,15 @@ namespace MoreMountains.CorgiEngine
 						}
 					}
 				}
-			}           
 
-			if (authorize)
-			{
-				AuthorizeStairs();
-			}
-			else
-			{
-				DenyStairs();
+				if (authorize)
+				{
+					AuthorizeStairs();
+				}
+				else
+				{
+					DenyStairs();
+				}
 			}
 		}
 
@@ -252,6 +268,7 @@ namespace MoreMountains.CorgiEngine
 		/// </summary>
 		protected virtual void AuthorizeStairs()
 		{
+			// Debug.Log("Collision On");
 			_controller.CollisionsOnWithStairs();
 		}
 
@@ -260,6 +277,7 @@ namespace MoreMountains.CorgiEngine
 		/// </summary>
 		protected virtual void DenyStairs()
 		{
+			//Debug.Log("Collision Off");
 			_controller.CollisionsOffWithStairs();
 		}
 
@@ -281,7 +299,7 @@ namespace MoreMountains.CorgiEngine
 				_raycastDirection = -transform.right;
 			}
 
-			// we cast our ray in front of us
+			// we cast our ray in front of us 
 			RaycastHit2D hit = MMDebug.RayCast(_raycastOrigin, _raycastDirection, StairsAheadDetectionRaycastLength, _controller.StairsMask, Color.yellow, _controller.Parameters.DrawRaycastsGizmos);
 
 			if (hit)
