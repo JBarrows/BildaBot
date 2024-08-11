@@ -11304,6 +11304,7 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
+  PartNeeded: {fileID: 0}
 --- !u!1 &914267067
 GameObject:
   m_ObjectHideFlags: 0
@@ -12426,6 +12427,7 @@ GameObject:
   - component: {fileID: 1207220153}
   - component: {fileID: 1207220155}
   - component: {fileID: 1207220154}
+  - component: {fileID: 1207220156}
   m_Layer: 0
   m_Name: Clawbot
   m_TagString: Untagged
@@ -12506,14 +12508,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd859e1b0273ee74ebcf73381dd4d034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonActivatedRequirement: 2
+  ButtonActivatedRequirement: 0
   RequiresPlayerType: 1
-  RequiresButtonActivationAbility: 1
+  RequiresButtonActivationAbility: 0
   PreventJumpsWhileInThisZone: 0
   Activable: 1
   AutoActivation: 0
   AutoActivationAndButtonInteraction: 0
-  CanOnlyActivateIfGrounded: 0
+  CanOnlyActivateIfGrounded: 1
   ShouldUpdateState: 1
   OnlyOneActivationAtOnce: 1
   AlsoPerformChecksOnStay: 0
@@ -12522,18 +12524,19 @@ MonoBehaviour:
     m_Bits: 4294967295
   UnlimitedActivations: 1
   MaxNumberOfActivations: 0
-  DelayBetweenUses: 0
+  DelayBetweenUses: 0.5
   DisableAfterUse: 0
-  InputType: 0
+  InputType: 1
   InputButton: Interact
   InputKey: 32
   AnimationTriggerParameterName: 
   UseVisualPrompt: 1
-  ButtonPromptPrefab: {fileID: 0}
+  ButtonPromptPrefab: {fileID: 114235008137252218, guid: bb1fc0f1f16f31248b9b4d80aa795609,
+    type: 3}
   ButtonPromptText: A
-  ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 1}
+  ButtonPromptColor: {r: 0, g: 0, b: 0, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
-  AlwaysShowPrompt: 1
+  AlwaysShowPrompt: 0
   ShowPromptWhenColliding: 1
   HidePromptAfterUse: 0
   PromptRelativePosition: {x: 0, y: 0, z: 0}
@@ -12550,6 +12553,28 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
+  PartNeeded: {fileID: 11400000, guid: 99e40ab14101a4f4ea904388c476505c, type: 2}
+--- !u!95 &1207220156
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207220152}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 17530fc616e6550439654710d12402a4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1254797407
 GameObject:
   m_ObjectHideFlags: 0
@@ -14354,6 +14379,7 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
+  PartNeeded: {fileID: 0}
 --- !u!1001 &1597048724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17162,7 +17188,7 @@ Transform:
   m_GameObject: {fileID: 2050544626}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 69.9046, y: 11.580002, z: -24}
+  m_LocalPosition: {x: 100.4046, y: -7.949998, z: -24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
