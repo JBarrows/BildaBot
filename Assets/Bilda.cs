@@ -57,4 +57,18 @@ public class Bilda : MonoBehaviour
         stage = (UpgradeStage)((int)stage + 1);
         SelectModel();
     }
+    float jumpTime = float.MaxValue;
+    public void StartJump()
+    {
+        CurrentModel.GetComponent<Animator>().SetTrigger("Jumping");
+        jumpTime = Time.time;
+    }
+
+    public void EndJump()
+    {
+        if (Time.time - jumpTime < 0.5f)
+            return;
+
+        CurrentModel.GetComponent<Animator>().SetTrigger("HitTheGround");
+    }
 }
