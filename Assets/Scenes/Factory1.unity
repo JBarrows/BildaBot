@@ -1840,12 +1840,12 @@ PrefabInstance:
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.g
-      value: 0.5294118
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.r
-      value: 0.8352941
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270767, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
@@ -11810,41 +11810,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 161304589}
     m_Modifications:
-    - target: {fileID: 5652024618361765557, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5654350258254656659, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_Name
-      value: A1-A2 Teleporter
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656337644694506010, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656337644694506011, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656337645463020156, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656337645463020156, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656337646326270765, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270765, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11897,38 +11862,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
-      propertyPath: DoorColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
       propertyPath: DoorColor.g
-      value: 0.5294118
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: DoorColor.r
-      value: 0.8352942
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270767, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: m_Name
       value: A1 Exit A2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656337646351240767, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666849892902559711, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5666849892902559711, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5758574105483329267, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
@@ -11945,19 +11885,8 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 189067042}
-    - target: {fileID: 5758574105483329267, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: ExitOffset.x
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5758574105483329267, guid: 82bb24c4576a8c847ac38bfa6550f716,
-        type: 3}
-      propertyPath: AddToDestinationIgnoreList
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 5656337644561316574, guid: 82bb24c4576a8c847ac38bfa6550f716, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82bb24c4576a8c847ac38bfa6550f716, type: 3}
@@ -12733,12 +12662,12 @@ PrefabInstance:
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.g
-      value: 0.5294118
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.r
-      value: 0.8352941
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270767, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
@@ -17294,12 +17223,12 @@ PrefabInstance:
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.g
-      value: 0.5294118
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.r
-      value: 0.8352941
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270767, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
@@ -19436,12 +19365,12 @@ PrefabInstance:
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.g
-      value: 0.5294118
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.r
-      value: 0.8352941
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270767, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
@@ -22103,12 +22032,12 @@ PrefabInstance:
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.g
-      value: 0.5294118
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270766, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: DoorColor.r
-      value: 0.8352941
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646326270767, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
