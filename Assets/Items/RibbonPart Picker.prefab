@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1472130053336478, guid: 063bd662b2d970f47842c9528fa01a19, type: 3}
       propertyPath: m_Name
-      value: CrushPart Picker Variant 1
+      value: RibbonPart
       objectReference: {fileID: 0}
     - target: {fileID: 4133965223222142, guid: 063bd662b2d970f47842c9528fa01a19, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56,7 +56,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Item
       value: 
-      objectReference: {fileID: 11400000, guid: e358ddc45f4c05843a7e8b7df142637e,
+      objectReference: {fileID: 11400000, guid: 6d85a12d645753e46b034aa1a7bf2adf,
         type: 2}
     - target: {fileID: 212850589034612008, guid: 063bd662b2d970f47842c9528fa01a19,
         type: 3}
