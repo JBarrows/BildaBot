@@ -26,9 +26,12 @@ public class BrokenMachine : ButtonActivated
 			// Check if we have enough parts (Player inventory)
 			int partsCount = inv.GetQuantity(PartNeeded.ItemID);
 			if (partsCount >= PARTS_REQUIRED) {
-				// TODO: Fix this machine
+				// Fix this machine
 				Debug.Log($"Fix!");
 				GetComponent<Animator>().SetTrigger("fixed");
+
+				// Get an upgrade
+				instigator.GetComponent<Bilda>().Upgrade();
 			} else {
 				// TODO: Say something about not having enough parts
 				Debug.Log($"Not enough pieces! ({partsCount}/{PARTS_REQUIRED})");
