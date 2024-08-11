@@ -66,7 +66,7 @@ public class Bilda : MonoBehaviour
 
     public void EndJump()
     {
-        if (Time.time - jumpTime < 0.5f)
+        if (Time.time - jumpTime < 0.5f || CurrentModel.GetComponent<Animator>().GetBool("Jumping"))
             return;
 
         CurrentModel.GetComponent<Animator>().SetTrigger("HitTheGround");

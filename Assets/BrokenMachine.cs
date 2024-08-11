@@ -32,6 +32,9 @@ public class BrokenMachine : ButtonActivated
 
 				// Get an upgrade
 				instigator.GetComponent<Bilda>().Upgrade();
+
+				// Disable
+				Activable = false;
 			} else {
 				// TODO: Say something about not having enough parts
 				Debug.Log($"Not enough pieces! ({partsCount}/{PARTS_REQUIRED})");

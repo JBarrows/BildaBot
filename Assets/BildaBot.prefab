@@ -213,6 +213,8 @@ MonoBehaviour:
         BoundAnimator: {fileID: 4907882381793413775}
         ExtraBoundAnimators:
         - {fileID: 5668158815750993628}
+        - {fileID: 6599853301076425126}
+        - {fileID: 5196119742242007196}
         DeclaredDuration: 0
         UpdateTrigger: 0
         TriggerMode: 0
@@ -671,7 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1c25c0b1b2cf3458f22c35107feffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stage: 2
+  stage: 0
   models:
   - {fileID: 305506805606954070}
   - {fileID: 4772602370105576279}
@@ -2285,6 +2287,8 @@ MonoBehaviour:
         BoundAnimator: {fileID: 4907882381793413775}
         ExtraBoundAnimators:
         - {fileID: 5668158815750993628}
+        - {fileID: 6599853301076425126}
+        - {fileID: 5196119742242007196}
         DeclaredDuration: 0
         UpdateTrigger: 0
         TriggerMode: 0
