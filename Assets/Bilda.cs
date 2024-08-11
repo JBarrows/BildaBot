@@ -30,6 +30,8 @@ public class Bilda : MonoBehaviour
         }
 
         GetComponent<Character>().CharacterModel = CurrentModel;
+
+        GetComponent<CharacterStairs>().AbilityPermitted =  (stage >= UpgradeStage.Legs);
     }
 
 
