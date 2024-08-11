@@ -194,20 +194,12 @@ namespace MoreMountains.CorgiEngine
 					{
 						authorize = false;
 					}
-
-					if (authorize) {
-						Debug.Log("Authorizing");
-                    } else {
-						Debug.Log("Nothorizing");
-					}
 				} else if (!_controller._collisionsOnWithStairs) {
 					// Stairs not in front, collision still disabled
-					Debug.LogWarning("Collision imminent!");
 					var bounds = _controller.GetComponent<BoxCollider2D>().bounds;
 					bool intersectingWithStairs = Physics2D.OverlapBox(bounds.center, bounds.size, 0f, _controller.StairsMask);
 					if (intersectingWithStairs) {
 						//intersecting with stairs, don't enable collision yet!
-						Debug.Log("INTERSECTION !!");
 						authorize = false;
                     }
                 }

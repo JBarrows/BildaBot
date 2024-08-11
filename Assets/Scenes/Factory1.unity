@@ -1244,37 +1244,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &235337293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &211510961 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5758574105483329267, guid: 82bb24c4576a8c847ac38bfa6550f716,
+    type: 3}
+  m_PrefabInstance: {fileID: 1808302209}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 235337294}
-  m_Layer: 0
-  m_Name: Area C Platforms
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &235337294
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235337293}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.553501, y: -0.46590042, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &247082007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10958,6 +10939,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e36d9092829cb4f945bd52c4c59db5, type: 3}
+--- !u!114 &712300421 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5758574105483329267, guid: 82bb24c4576a8c847ac38bfa6550f716,
+    type: 3}
+  m_PrefabInstance: {fileID: 845720788}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &716445666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11151,7 +11144,7 @@ PrefabInstance:
     - target: {fileID: 5654350258254656659, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: m_Name
-      value: A2-A1 Teleporter
+      value: B2-B1 Teleporter
       objectReference: {fileID: 0}
     - target: {fileID: 5656337644694506010, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
@@ -11251,7 +11244,7 @@ PrefabInstance:
     - target: {fileID: 5656337646326270767, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: m_Name
-      value: A2 Exit A1
+      value: B2 Exit B1
       objectReference: {fileID: 0}
     - target: {fileID: 5656337646351240767, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
@@ -11272,7 +11265,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TargetRoom
       value: 
-      objectReference: {fileID: 161304587}
+      objectReference: {fileID: 1608013255}
     - target: {fileID: 5758574105483329267, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: CurrentRoom
@@ -11282,7 +11275,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 635343962}
+      objectReference: {fileID: 211510961}
     - target: {fileID: 5758574105483329267, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: ExitOffset.x
@@ -11579,6 +11572,7 @@ GameObject:
   - component: {fileID: 895343448}
   - component: {fileID: 895343450}
   - component: {fileID: 895343449}
+  - component: {fileID: 895343451}
   m_Layer: 0
   m_Name: Ribbonbot
   m_TagString: Untagged
@@ -11659,14 +11653,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd859e1b0273ee74ebcf73381dd4d034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonActivatedRequirement: 2
+  ButtonActivatedRequirement: 0
   RequiresPlayerType: 1
-  RequiresButtonActivationAbility: 1
+  RequiresButtonActivationAbility: 0
   PreventJumpsWhileInThisZone: 0
   Activable: 1
   AutoActivation: 0
   AutoActivationAndButtonInteraction: 0
-  CanOnlyActivateIfGrounded: 0
+  CanOnlyActivateIfGrounded: 1
   ShouldUpdateState: 1
   OnlyOneActivationAtOnce: 1
   AlsoPerformChecksOnStay: 0
@@ -11675,22 +11669,23 @@ MonoBehaviour:
     m_Bits: 4294967295
   UnlimitedActivations: 1
   MaxNumberOfActivations: 0
-  DelayBetweenUses: 0
+  DelayBetweenUses: 0.5
   DisableAfterUse: 0
-  InputType: 0
+  InputType: 1
   InputButton: Interact
   InputKey: 32
   AnimationTriggerParameterName: 
   UseVisualPrompt: 1
-  ButtonPromptPrefab: {fileID: 0}
+  ButtonPromptPrefab: {fileID: 114235008137252218, guid: bb1fc0f1f16f31248b9b4d80aa795609,
+    type: 3}
   ButtonPromptText: A
-  ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 1}
+  ButtonPromptColor: {r: 0, g: 0, b: 0, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
-  AlwaysShowPrompt: 1
+  AlwaysShowPrompt: 0
   ShowPromptWhenColliding: 1
   HidePromptAfterUse: 0
-  PromptRelativePosition: {x: 0, y: 0, z: 0}
-  ActivationFeedback: {fileID: 0}
+  PromptRelativePosition: {x: 0, y: 3.5, z: 0}
+  ActivationFeedback: {fileID: 3540468}
   DeniedFeedback: {fileID: 0}
   EnterFeedback: {fileID: 0}
   ExitFeedback: {fileID: 0}
@@ -11703,7 +11698,28 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
-  PartNeeded: {fileID: 0}
+  PartNeeded: {fileID: 11400000, guid: 6d85a12d645753e46b034aa1a7bf2adf, type: 2}
+--- !u!95 &895343451
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895343447}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 442026879256f9b48a5909edacb96a88, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &914267067
 GameObject:
   m_ObjectHideFlags: 0
@@ -12126,7 +12142,7 @@ PrefabInstance:
     - target: {fileID: 4273831798729858039, guid: 0bbd904ef362d0744a1d1bf0311c2908,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.563553
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 4273831798729858039, guid: 0bbd904ef362d0744a1d1bf0311c2908,
         type: 3}
@@ -12882,7 +12898,7 @@ MonoBehaviour:
   AlwaysShowPrompt: 0
   ShowPromptWhenColliding: 1
   HidePromptAfterUse: 0
-  PromptRelativePosition: {x: 0, y: 0, z: 0}
+  PromptRelativePosition: {x: 0, y: 3.5, z: 0}
   ActivationFeedback: {fileID: 3540468}
   DeniedFeedback: {fileID: 0}
   EnterFeedback: {fileID: 0}
@@ -14544,6 +14560,7 @@ GameObject:
   - component: {fileID: 1581886265}
   - component: {fileID: 1581886267}
   - component: {fileID: 1581886266}
+  - component: {fileID: 1581886268}
   m_Layer: 0
   m_Name: Crushbot
   m_TagString: Untagged
@@ -14624,14 +14641,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd859e1b0273ee74ebcf73381dd4d034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonActivatedRequirement: 2
+  ButtonActivatedRequirement: 0
   RequiresPlayerType: 1
-  RequiresButtonActivationAbility: 1
+  RequiresButtonActivationAbility: 0
   PreventJumpsWhileInThisZone: 0
   Activable: 1
   AutoActivation: 0
   AutoActivationAndButtonInteraction: 0
-  CanOnlyActivateIfGrounded: 0
+  CanOnlyActivateIfGrounded: 1
   ShouldUpdateState: 1
   OnlyOneActivationAtOnce: 1
   AlsoPerformChecksOnStay: 0
@@ -14640,22 +14657,23 @@ MonoBehaviour:
     m_Bits: 4294967295
   UnlimitedActivations: 1
   MaxNumberOfActivations: 0
-  DelayBetweenUses: 0
+  DelayBetweenUses: 0.5
   DisableAfterUse: 0
-  InputType: 0
+  InputType: 1
   InputButton: Interact
   InputKey: 32
   AnimationTriggerParameterName: 
   UseVisualPrompt: 1
-  ButtonPromptPrefab: {fileID: 0}
+  ButtonPromptPrefab: {fileID: 114235008137252218, guid: bb1fc0f1f16f31248b9b4d80aa795609,
+    type: 3}
   ButtonPromptText: A
-  ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 1}
+  ButtonPromptColor: {r: 0, g: 0, b: 0, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
-  AlwaysShowPrompt: 1
+  AlwaysShowPrompt: 0
   ShowPromptWhenColliding: 1
   HidePromptAfterUse: 0
-  PromptRelativePosition: {x: 0, y: 0, z: 0}
-  ActivationFeedback: {fileID: 0}
+  PromptRelativePosition: {x: 0, y: 3.5, z: 0}
+  ActivationFeedback: {fileID: 3540468}
   DeniedFeedback: {fileID: 0}
   EnterFeedback: {fileID: 0}
   ExitFeedback: {fileID: 0}
@@ -14668,7 +14686,28 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
-  PartNeeded: {fileID: 0}
+  PartNeeded: {fileID: 11400000, guid: e358ddc45f4c05843a7e8b7df142637e, type: 2}
+--- !u!95 &1581886268
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581886264}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 2a21dfc0f49da274e9ce3a5d70bd6cf9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1597048724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14695,7 +14734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 499328, guid: 9b115bd337eefbe498ba383083f78409, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.49839973
+      value: -0.444
       objectReference: {fileID: 0}
     - target: {fileID: 499328, guid: 9b115bd337eefbe498ba383083f78409, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15877,7 +15916,7 @@ PrefabInstance:
     - target: {fileID: 4273831798729858039, guid: 0bbd904ef362d0744a1d1bf0311c2908,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.9456482
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4273831798729858039, guid: 0bbd904ef362d0744a1d1bf0311c2908,
         type: 3}
@@ -16540,7 +16579,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TargetRoom
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 332564895}
     - target: {fileID: 5758574105483329267, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: CurrentRoom
@@ -16550,7 +16589,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 712300421}
     - target: {fileID: 5758574105483329267, guid: 82bb24c4576a8c847ac38bfa6550f716,
         type: 3}
       propertyPath: ExitOffset.x
@@ -16660,7 +16699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 499328, guid: 9b115bd337eefbe498ba383083f78409, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5035
+      value: -0.444
       objectReference: {fileID: 0}
     - target: {fileID: 499328, guid: 9b115bd337eefbe498ba383083f78409, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18612,16 +18651,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RetroStairs
       objectReference: {fileID: 0}
-    - target: {fileID: 4273831798729858038, guid: 0bbd904ef362d0744a1d1bf0311c2908,
-        type: 3}
-      propertyPath: m_Points.Array.data[1].x
-      value: -8.858673
-      objectReference: {fileID: 0}
-    - target: {fileID: 4273831798729858038, guid: 0bbd904ef362d0744a1d1bf0311c2908,
-        type: 3}
-      propertyPath: m_Points.Array.data[1].y
-      value: 8.827265
-      objectReference: {fileID: 0}
     - target: {fileID: 4273831798729858039, guid: 0bbd904ef362d0744a1d1bf0311c2908,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18751,7 +18780,6 @@ SceneRoots:
   - {fileID: 346060287}
   - {fileID: 1440204200}
   - {fileID: 247082007}
-  - {fileID: 235337294}
   - {fileID: 161304589}
   - {fileID: 479093902}
   - {fileID: 647204998}

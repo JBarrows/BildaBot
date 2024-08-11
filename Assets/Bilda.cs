@@ -30,8 +30,22 @@ public class Bilda : MonoBehaviour
         }
 
         GetComponent<Character>().CharacterModel = CurrentModel;
+        var scale = CurrentModel.transform.localScale;
+        scale.x = GetComponent<Character>().IsFacingRight ? 1f : -1f;
+        CurrentModel.transform.localScale = scale;
+        
 
         GetComponent<CharacterStairs>().AbilityPermitted =  (stage >= UpgradeStage.Legs);
+        GetComponent<CharacterJump>().AbilityPermitted = (stage >= UpgradeStage.Jetpack);
+
+        var moveAbility = GetComponent<CharacterHorizontalMovement>();
+        moveAbility.MovementSpeedMultiplier = stage switch {
+            UpgradeStage.Hand => 1.0f,
+            UpgradeStage.Legs => 1.2f,
+            UpgradeStage.Jetpack => 1.2f,
+            UpgradeStage.Ribbon => 1.6f,
+            _ => 1.2f
+        };
     }
 
 

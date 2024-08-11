@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CrushbotAnimation
+  m_Controller: {fileID: 9100000, guid: 17530fc616e6550439654710d12402a4, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 95d871ef63c1dd84c8e6cc3e8007049c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9ed6121f3307d5848a3975b97bdb6444, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1c1e3bd93178cf147bddc224df2f55f8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8cdcf119207aee14e90bb1c372da30c5, type: 2}

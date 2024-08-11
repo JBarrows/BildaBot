@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BildaRibbonAnim
+  m_Controller: {fileID: 9100000, guid: d6cedcd6db87f58458248305c6b78f11, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: c811d00300b7aca4d974298ff2225eda, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7a4f113d1ba35ef469023467d0b72907, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3934df6c3e6cb2244b67a6f1a4dd419f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6e1202f89eab89c468a66f30cd97fecc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 139cf5f0bbd7bfe488f263abcbdcd18b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e95153b002a49db4ab25294e8f6f325d, type: 2}
