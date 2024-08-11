@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce0ca7610fdfde4499433d3edd6da633
+guid: 523a9786e7cb4a94eac1ef4cb32b90ca
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guyMoving_0
+      name: legsguyStartMove_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 512
-        height: 512
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd003664b3c1f0a41baaeae218f5c3a0
-      internalID: -145936941
+      spriteID: ebc0e13fbf71f9944ac49457b9a47fe6
+      internalID: 1390245602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guyMoving_1
+      name: legsguyStartMove_1
       rect:
         serializedVersion: 2
         x: 512
         y: 0
         width: 512
-        height: 512
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bd4a42cc5ca83e41b9034a003b10072
-      internalID: -814930663
+      spriteID: 74abd130cd6959e4ca9034e1a7c942b3
+      internalID: -475903951
       vertices: []
       indices: 
       edges: []
@@ -149,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      guyMoving_0: -145936941
-      guyMoving_1: -814930663
+      legsguyStartMove_0: 1390245602
+      legsguyStartMove_1: -475903951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
